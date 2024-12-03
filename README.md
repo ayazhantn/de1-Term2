@@ -1,5 +1,39 @@
 # de1-Term2
 
+This repository contains our work for the Data Engineering 1: SQL and Different Shapes of Data course. The Term Project 2 uses data from the Brazilian E-Commerce Public Dataset by Olist.
+
+Project Title: Brazilian E-Commerce Public Dataset Analysis
+
+## Usage Instructions
+
+1. **Clone the repository:**
+   ```bash
+   git clone 
+
+
+## Repository Structure
+
+The repository is organized as follows:
+- **`Term2/`**: Main project folder.
+  - **`data/`**: Contains CSV files with raw data.
+    - `olist_customers_dataset.csv`: Data related to clients.
+    - `olist_geolocation_dataset.csv`: Data related to geolocation.
+    - `olist_order_items_dataset.csv`: Data related to ordered items.
+    - `olist_order_payments_dataset.csv`: Data related to payments.
+    - `olist_order_reviews_dataset.csv`: Data related to reviews on orders.
+    - `olist_orders_dataset.csv`: Data related to orders.
+    - `olist_products_dataset.csv`: Data related to products.
+    - `olist_sellers_dataset.csv`: Data related to sellers on the ecommerce platform.
+    - `product_category_name_translation.csv`: English translations of product categories.
+  - **`script/`**: Contains scripts, codes used in the project.
+    - `term-project-2.knwf`: Knime workflow file.
+  - **`EER.jpeg`**: EER.
+  - **`Report_Team1.pdf`**: The documentation file.
+  - **`Presentation_Team1.pdf`**: Presentation file.
+
+- **`README.md`**: This file, which contains the brief documentation for the project.
+
+
 ## Data Description
 Tables:
 
