@@ -32,9 +32,11 @@ The repository is organized as follows:
     - `olist_products_dataset.csv`: Data related to products.
     - `olist_sellers_dataset.csv`: Data related to sellers on the ecommerce platform.
     - `product_category_name_translation.csv`: English translations of product categories.
-  - **`script/`**: Contains scripts, codes used in the project.
+  - **`script/`**: Contains Python code and Knime workflow used in the project.
+    - `mongo.ipynb`: Python script for importing data.
     - `term-project-2.knwf`: Knime workflow file.
   - **`EER.jpeg`**: EER.
+  - **`Knime_workflow.jpeg`**: ETL Pipeline in Knime.
   - **`Report_Team1.pdf`**: The documentation file.
   - **`Presentation_Team1.pdf`**: Presentation file.
 
