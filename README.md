@@ -1,7 +1,7 @@
 # de1-Term2
 
-This repository contains our work for the ECBS 5146 Data Engineering 1: SQL and Different Shapes of Data course. The Term Project 2 uses data from the Brazilian E-Commerce Public Dataset by Olist.
-
+This repository contains our work for the ECBS 5146 Data Engineering 1: SQL and Different Shapes of Data course.
+The Term Project 2 uses data from the Brazilian E-Commerce Public Dataset by Olist.
 Project Title: Brazilian E-Commerce Public Dataset Analysis
 
 ## Usage Instructions
@@ -13,14 +13,10 @@ Project Title: Brazilian E-Commerce Public Dataset Analysis
  # Table of Contents
 1. [Repository Structure](#repository-structure)
 2. [Project Overview](#project-overview)
-3. [Data Source Details](#data-source-details)
-4. [System Architecture](#system-architecture)
-5. [Operational Data Layer](#operational-data-layer)
-6. [Analytics Plan](#analytics-plan)
-7. [Analytical Data Layer](#analytical-data-layer)
-8. [ETL Pipeline Design](#etl-pipeline-design)
-9. [Data Mart and Views](#data-mart-and-views)
-10. [Conclusion and Future Work](#conclusion-and-future-work)
+3. [Data Description](#data-description)
+4. [ETL Pipeline Design](#etl-pipeline-design)
+5. [Data Mart and Views](#data-mart-and-views)
+6. [Conclusion and Future Work](#conclusion-and-future-work)
 
 # Repository Structure
 
@@ -46,9 +42,13 @@ The repository is organized as follows:
 
  # Project Overview
 
-The goal of this project is to apply knowledge and skills learned during the Data Engineering 1: SQL and Different Shapes of Data course. The project involves building an ETL pipeline and analytics framework for the chosen Google Merchandise Store dataset to get insights about user behavior, sales trends, and data quality issues.
+The goal of this project is to apply knowledge and skills learned during the Data Engineering 1: SQL and Different Shapes of Data course. The project involves building an ETL pipeline in Knime, setting research questions and analyzing them to get insights about customer behavior and sales trends.
 
  # Data Description
+Source: Kaggle - [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+
+The dataset contains details of 100,000 orders placed across various marketplaces in Brazil between 2016 and 2018.
+ 
 Tables:
 
 olist_customers_dataset.csv table contains information on clients:
