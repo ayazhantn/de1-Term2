@@ -14,9 +14,10 @@ Project Title: Brazilian E-Commerce Public Dataset Analysis
 1. [Repository Structure](#repository-structure)
 2. [Project Overview](#project-overview)
 3. [Data Description](#data-description)
-4. [ETL Pipeline Design](#etl-pipeline-design)
-5. [Data Mart and Views](#data-mart-and-views)
-6. [Conclusion and Future Work](#conclusion-and-future-work)
+4. [Research Questipns](#research-questions)
+5. [ETL Pipeline Design](#etl-pipeline-design)
+6. [Visualizations](#visualizations)
+7. [Conclusion and Future Work](#conclusion-and-future-work)
 
 # Repository Structure
 
@@ -37,6 +38,12 @@ The repository is organized as follows:
     - `term-project-2.knwf`: Knime workflow file.
   - **`EER.jpeg`**: EER.
   - **`Knime_workflow.jpeg`**: ETL Pipeline in Knime.
+  - **`visuals/`**: Contains visualisations answering Research Questions.
+    - `Q1Chart.jpeg`**: Chart for Q1.
+    - `Q2Chart.jpeg`**: Chart for Q2.
+    - `Q3ChartA.jpeg`**: Chart A for Q3.
+    - `Q3ChartB.jpeg`**: Chart B for Q3.
+    - `Q4Chart.jpeg`**: Chart for Q4.
   - **`Report_Team1.pdf`**: The documentation file.
   - **`Presentation_Team1.pdf`**: Presentation file.
 
@@ -44,7 +51,7 @@ The repository is organized as follows:
 
  # Project Overview
 
-The goal of this project is to apply knowledge and skills learned during the Data Engineering 1: SQL and Different Shapes of Data course. The project involves building an ETL pipeline in Knime, setting research questions and analyzing them to get insights about customer behavior and sales trends.
+The goal of this project is to apply knowledge and skills learned during the Data Engineering 1: SQL and Different Shapes of Data course. The project involves building an ETL pipeline in Knime, setting research questions and analyzing them to get insights about customer behavior and sales trends from the Brazilian E-Commerce Dataset.
 
  # Data Description
 Source: Kaggle - [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
@@ -141,3 +148,62 @@ product_category_name_translation.csv table contains translations of product cat
 |----------------------------|--------------------------------------------------------------|
 | product_category_name            | Category name in Portuguese.                        |
 | product_category_name_english    | Category name in English.                       |
+
+![EER](Term2/EER.jpeg)
+
+# ETL Pipeline Design
+The ETL pipeline involves following steps:
+
+
+# Research Questions
+Q1. How does the delivery performance (on-time vs. delayed) affect customer sentiment in Brazilian e-commerce?
+Q2. Is there a clear seasonal trend in order volume? How to promote off-season sales?
+Q3. Which categories perform best and worst nationwide?
+Q4. Are there noticeable regional differences in the delivery periods?
+
+# Visualizations & Answers to Research Questions
+
+Q1. How does the delivery performance (on-time vs. delayed) affect customer sentiment in Brazilian e-commerce?
+
+![Q1Chart](Term2/visuals/Q1Chart.jpeg)
+
+
+Q2. Is there a clear seasonal trend in order volume? How to promote off-season sales?
+
+![Q2Chart](Term2/visuals/Q2Chart.jpeg)
+
+1. Analysis of Seasonal Order Trends
+From the bar chart, we can clearly see the differences in order quantities across different seasons：
+- Winter has the highest order volume, nearing 30,573 orders, indicating very strong market demand during this season. This is likely due to holiday promotions (e.g., Christmas and New Year sales), where consumers tend to make more purchases.
+- Autumn follows closely, with relatively high order numbers, likely driven by autumn promotions and seasonal product demand.
+- Summer has a moderate order volume, lower than both autumn and winter but higher than spring. This suggests stable consumer demand during summer, possibly influenced by holidays and leisure travel seasons.
+- Spring has the lowest order volume, significantly lower than the other three seasons. This may reflect weaker market demand during spring, possibly due to the absence of major holidays or promotional events, resulting in lower consumer purchasing intent.
+
+2. Conclusions
+- Winter and Autumn: These two seasons have higher order volumes, likely due to holiday sales, seasonal promotions, and demand fluctuations. These seasons represent critical sales periods for businesses, and large-scale promotions should be planned in advance.
+- Spring Sales Slump: Spring has a significantly lower order volume, which may be attributed to the lack of major holidays or promotional events. This season may require businesses to adopt strategies to boost sales.
+
+3. Strategies to Boost Spring Sales
+To increase sales during the spring season, businesses can consider the following strategies:
+- Seasonal Promotions: Offer discounts or promotional activities for spring products to attract consumers. For example, a “Spring Clearance” sale could encourage consumers to purchase seasonal products.
+- Cross-Season Bundling: Bundle spring products with popular items from other seasons to boost sales. For example, pairing spring clothing with winter products can help drive sales.
+- Marketing Campaigns: Spring marketing campaigns may need more targeted efforts. Promotions can be tailored to specific consumer groups via social media, email marketing, and other channels to raise awareness and interest in spring products.
+- Limited-Time Promotions: Introduce limited-time offers during specific dates or holidays (e.g., Easter) in spring to encourage consumer purchases.
+
+4. Overall Trends and Recommendations
+Overall, businesses should focus on the Autumn and Winter seasons as key sales periods, where heavier promotion efforts can capture consumer spending. For Spring, innovative promotional tactics and strategies are needed to spark consumer interest and prevent low sales from affecting overall business performance.
+
+
+Q3. Which categories perform best and worst nationwide?
+
+![Q3ChartA](Term2/visuals/Q3ChartA.jpeg)
+![Q3ChartB](Term2/visuals/Q3ChartB.jpeg)
+
+
+Q4. Are there noticeable regional differences in the delivery periods?
+
+![Q4Chart](Term2/visuals/Q4Chart.jpeg)
+
+
+# Conclusion and Future Work
+
