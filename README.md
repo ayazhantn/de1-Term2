@@ -18,7 +18,7 @@ Project Title: Brazilian E-Commerce Public Dataset Analysis
 1. [Repository Structure](#repository-structure)
 2. [Project Overview](#project-overview)
 3. [Data Description](#data-description)
-4. [Research Questipns](#research-questions)
+4. [Research Questions](#research-questions)
 5. [ETL Pipeline Design](#etl-pipeline-design)
 6. [Visualizations and Answers to Research Questions](#visualizations-and-answers-to-research-questions)
 7. [Conclusion and Future Work](#conclusion-and-future-work)
@@ -189,7 +189,7 @@ Q3. Which categories perform best and worst nationwide?
 Q4. Are there noticeable regional differences in the delivery periods?
 
 
-# Visualizations & Answers to Research Questions
+# Visualizations and Answers to Research Questions
 
 Q1. How does the delivery performance (on-time vs. delayed) affect customer sentiment in Brazilian e-commerce?
 
