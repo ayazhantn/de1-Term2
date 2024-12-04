@@ -6,6 +6,10 @@ Project Title: Brazilian E-Commerce Public Dataset Analysis
 
 ## Usage Instructions
 
+0. Prerequisites:
+
+   - Knime
+
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/ayazhantn/de1-Term2
@@ -39,11 +43,11 @@ The repository is organized as follows:
   - **`EER.jpeg`**: EER.
   - **`Knime_workflow.jpeg`**: ETL Pipeline in Knime.
   - **`visuals/`**: Contains visualisations answering Research Questions.
-    - `Q1Chart.jpeg`**: Chart for Q1.
-    - `Q2Chart.jpeg`**: Chart for Q2.
-    - `Q3ChartA.jpeg`**: Chart A for Q3.
-    - `Q3ChartB.jpeg`**: Chart B for Q3.
-    - `Q4Chart.jpeg`**: Chart for Q4.
+    - `Q1Chart.jpeg`: Chart for Q1.
+    - `Q2Chart.jpeg`: Chart for Q2.
+    - `Q3ChartA.jpeg`: Chart A for Q3.
+    - `Q3ChartB.jpeg`: Chart B for Q3.
+    - `Q4Chart.jpeg`: Chart for Q4.
   - **`Report_Team1.pdf`**: The documentation file.
   - **`Presentation_Team1.pdf`**: Presentation file.
 
@@ -152,14 +156,38 @@ product_category_name_translation.csv table contains translations of product cat
 ![EER](Term2/EER.jpeg)
 
 # ETL Pipeline Design
-The ETL pipeline involves following steps:
+The ETL pipeline involves different steps:
 
+Data Import and Joining
+
+- MongoDB Reader: Reads data from the MongoDB database, allowing us to retrieve information from the various collections.
+- JSON to Table: Converts data in JSON format into structured tabular data for making the analysis easier.
+
+
+Data Transformation and Cleaning
+
+- Different filtering, manipulation, grouping, sampling, sorting and difference calculation (e.g. Date&Time Difference) nodes were used depending on the Research Question analysis demand.
+
+
+Data Joining and Enrichment
+
+- Joiner, GeoFile Reader and JSON Path nodes were used for matching columns and enriching data with API, JSON files. Geospatial Analytics extension was an additional tool.
+
+
+Analysis and Visualization
+
+- Bar Chart (JavaScript), Rule Engine, Geospatial View were used to visualize trends and geographic patterns in the data and apply logical rules for categorization. As a result, clear representations of trends and research question answers are obtained.
+  
 
 # Research Questions
 Q1. How does the delivery performance (on-time vs. delayed) affect customer sentiment in Brazilian e-commerce?
+
 Q2. Is there a clear seasonal trend in order volume? How to promote off-season sales?
+
 Q3. Which categories perform best and worst nationwide?
+
 Q4. Are there noticeable regional differences in the delivery periods?
+
 
 # Visualizations & Answers to Research Questions
 
@@ -207,3 +235,16 @@ Q4. Are there noticeable regional differences in the delivery periods?
 
 # Conclusion and Future Work
 
+The project results are helpful for understanding key factors influencing customer behavior and optimizing business strategies in Brazilian e-commerce.
+
+1. Timely Deliveries Matter (Q1): On-time deliveries lead to positive sentiment, while delays often result in negative reviews. This emphasizes the need for efficient logistics.
+
+2. Seasonal Sales Trends (Q2): Winter and Autumn drive high order volumes due to holiday promotions, while Spring requires creative strategies to boost sales.
+
+3. Product Performance (Q3): Least popular product categories might be a sign of low demand and the necessity to give up on them or a sign of getting new shares in the market by improving the sellers' business systems in these areas. More analysis needs to be done to decide which way to go.
+
+4. Regional Delivery Insights (Q4): Delivery delays are more pronounced in northern regions, indicating logistical challenges that need addressing to improve satisfaction.
+
+These insights guide logistics optimization and new marketing strategies for better customer experiences and growth of businesses (sellers).
+
+However, this analysis needs to be deepened with future work. Namely, focus could be on expanding geospatial analytics for delivery optimization, checking time trends over the years (comparing 2016, 2017 and 2018 within each other and with more recent data) and integrating external data sources (e.g., weather, social media trends). This could provide further insights to possible improvements to the Brazilian e-commerce market.
