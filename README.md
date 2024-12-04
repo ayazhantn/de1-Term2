@@ -51,7 +51,7 @@ The repository is organized as follows:
   - **`Report_Team1.pdf`**: The documentation file.
   - **`Presentation_Team1.pdf`**: Presentation file.
 
-- **`README.md`**: This file, which contains the brief documentation for the project.
+- **`README.md`**: This file contains more expanded version of the documentation for the project. 
 
  # Project Overview
 
