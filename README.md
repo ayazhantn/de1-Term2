@@ -20,7 +20,7 @@ Project Title: Brazilian E-Commerce Public Dataset Analysis
 3. [Data Description](#data-description)
 4. [Research Questipns](#research-questions)
 5. [ETL Pipeline Design](#etl-pipeline-design)
-6. [Visualizations](#visualizations)
+6. [Visualizations & Answers to Research Questions](#visualizations-&-answers-to-research-questions)
 7. [Conclusion and Future Work](#conclusion-and-future-work)
 
 # Repository Structure
